@@ -38,7 +38,7 @@ const Services = () => {
       </div>
       <div className="slider-container md:px-10 lg:px-10 max-xs:px-3 xs:mx-12 sm:mx-10 xl:px-7">
         <Slider {...settings} className='Service__container max-xs:-ml-1 sm:mr-0 md:mr-0  lg:-mr-3 xs:mr-1 xl:mr-3 '>
-          {/* <div className="services-container flex justify-center px-20 mt-60"> */}
+
           {services.map((service, index) => (
             <div key={index}
               className="service-card w-full xl:mx-4  max-xs:w-fit sm:w-full md:w-full  h-full lg:w-[94%]    dark:border-aba border-2 shadow-lg"

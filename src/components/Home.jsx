@@ -5,9 +5,7 @@ import { ArrowDown } from "./Icons";
 import AB from "../assets/Ab.png"
 import contactInfo from '../data/contactInfo';
 import { Download } from './Icons';
-import resume from "../assets/ola.pdf"
-// import AOS from 'aos';
-// import 'aos/dist/aos.css';
+import resume from "../assets/ola.pdf";
 
 const home = () => {
     useEffect(() => {

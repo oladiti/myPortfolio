@@ -1,10 +1,10 @@
-import LinkedIn, { GitHub, GMail, Resume } from "../components/Icons";
+import LinkedIn, { GitHub, GMail, Resume, Whatsapp } from "../components/Icons";
 import ResumeLink from "../assets/ola.pdf"
 const contactInfo = [
     {
         id: 1,
         name: "LinkedIn",
-        link: "https://#",
+        link: "https://",
         icon: <LinkedIn />,
     },
     {
@@ -20,14 +20,15 @@ const contactInfo = [
         icon: <GMail />,
     },
 
+
     {
-        id: 4,
-        name: "Resume",
-        link: ResumeLink,
-        icon: <Resume />,
-        download: true
+        id: 5,
+        name: "whatsapp",
+        link: "https://wa.me/09017686057",
+        icon: <Whatsapp />,
+
     }
-    
+
 ];
 
 export default contactInfo;

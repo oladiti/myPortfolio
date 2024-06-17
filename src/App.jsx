@@ -38,10 +38,8 @@ const App = () => {
       <div data-aos="flip-left" data-aos-duration="1000">
         <About />
       </div>
+      <Projects />
       <div data-aos="flip-right" data-aos-duration="1000">
-        <Projects />
-      </div>
-      <div data-aos="flip-left" data-aos-duration="1000">
         <Skills />
       </div>
       <Services />

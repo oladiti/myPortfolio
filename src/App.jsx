@@ -46,9 +46,7 @@ const App = () => {
       <div data-aos="slide-left" data-aos-duration="1000">
         <Contact />
       </div>
-      <div data-aos="zoom-out-down" data-aos-duration="1000">
         <Footer />
-      </div>
       <BackToTopButton />
     </div >
 

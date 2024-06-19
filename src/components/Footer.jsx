@@ -39,7 +39,7 @@ const Footer = () => {
                             <div className='text-[0.9rem] font-advanced xs:pr-4 mt-2'>
                                 <p className='flex items-center max-xs:justify-center dark:text-gray-400  gap-3 mb-1'>
                                     <GMail /> oladitiabiodun86@gmail.com</p>
-                                <p className='flex  items-center max-xs:px-11   gap-3 '> <Map /><span className="pt-4 dark:text-gray-400">127,Bamgbose Street, Lagos Island, Nigeria.</span></p>
+                                <p className='flex  items-center max-xs:px-6 max-xs:ml-3   gap-3 '> <Map /><span className="pt-4 dark:text-gray-400">127,Bamgbose Street, Lagos Island, Nigeria.</span></p>
                             </div>
                             <ul className="flex items-center max-xs:px-9 gap-5 md:gap-3 justify-start">
                                 {contactInfo.map(({ id, link, name, icon, download }) => {

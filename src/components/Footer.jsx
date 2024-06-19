@@ -6,18 +6,18 @@ import contactInfo from '../data/contactInfo'
 const Footer = () => {
     const year = new Date().getFullYear().toString()
     return (
-        <div className='w-full  text-gray-300'>
+        <div className='w-full  text-gray-600'>
             <div className="section footer pb-5 max-xs:px-4">
-                <div className="flex flex-wrap xs:pl-3 md:px-0 justify-between text-gray-400">
+                <div className="flex flex-wrap xs:pl-3 md:px-0 justify-between dark:text-gray-400 text-gray-600">
                     <div className="w-full sm:w-3/5 lg:w-2/5 pr-2">
-                        <h3 className='text-gray-700 text-[1.75rem] font-bold pb-2'>Oladiti Abiodun</h3>
+                        <h3 className='text-gray-600 text-[1.75rem] font-bold pb-2'>Oladiti Abiodun</h3>
                         <p className='text-lg text-gray-500 pb-5'>Frontend Developer</p>
                         <p>Thanks for visiting my Personal Portfolio.</p>
                         <p>Lets connect over socials.</p>
                         <p>Open to any Feedback</p>
                     </div>
                     <div className="w-full xs:w-2/5 mt-8 sm:w-2/5 sm:mt-0 lg:w-[30%] sm:pl-20 lg:pl-12 justify-start">
-                        <h3 className='text-gray-700 text-[1.35rem] xs:text-2xl font-bold pb-4'>Quick Links</h3>
+                        <h3 className='text-gray-600 text-[1.35rem] xs:text-2xl font-bold pb-4'>Quick Links</h3>
                         {navLinks.map(({ link, id }) => {
                             return (
                                 <div key={id} className="group w-fit px-3 pt-1 ">
@@ -34,12 +34,12 @@ const Footer = () => {
                         })}
                     </div>
                     <div className="w-full mt-8 xs:w-3/5 sm:w-full lg:mt-0 lg:w-[30%] lg:pl-16">
-                        <h3 className='text-gray-700 text-2xl font-bold pb-4 max-xs:text-center '>Contact info</h3>
-                        <div className="flex flex-col sm:flex-row lg:flex-col  gap-5 xs:gap-10 sm:gap-5 md:gap-10 justify-between">
+                        <h3 className=' text-gray-600 text-2xl font-bold pb-4 max-xs:text-center '>Contact Information</h3>
+                        <div className="flex  flex-col sm:flex-row lg:flex-col  gap-5 xs:gap-10 sm:gap-5 md:gap-10 justify-between">
                             <div className='text-[0.9rem] font-advanced xs:pr-4 mt-2'>
-                                <p className='flex items-center max-xs:justify-center  gap-3 mb-1'>
+                                <p className='flex items-center max-xs:justify-center dark:text-gray-400  gap-3 mb-1'>
                                     <GMail /> oladitiabiodun86@gmail.com</p>
-                                <p className='flex  items-center max-xs:px-11  gap-3 '> <Map /><span className="pt-4">127,Bamgbose Street, Lagos Island, Nigeria.</span></p>
+                                <p className='flex  items-center max-xs:px-11   gap-3 '> <Map /><span className="pt-4 dark:text-gray-400">127,Bamgbose Street, Lagos Island, Nigeria.</span></p>
                             </div>
                             <ul className="flex items-center max-xs:px-9 gap-5 md:gap-3 justify-start">
                                 {contactInfo.map(({ id, link, name, icon, download }) => {
@@ -60,7 +60,7 @@ const Footer = () => {
             </div>
             <div className="section py-6 font-advanced">
                 <div className="">
-                    <p className=' text-md  text-gray-700 dark:text-gray-500 flex justify-center items-center '>
+                    <p className=' text-md  dark:text-gray-400 flex justify-center items-center '>
                         <span className="px-1 pb-[0.2rem]">  <CopyRight /></span> {`2022- ${year}`} | All Rights Reserved</p>
                 </div>
             </div>

@@ -21,14 +21,14 @@ const TechStack = [
         name: "Javascript",
 
     },
-    
+
     {
         id: 1,
         icon: <ReactJs width={30} height={30} />,
         name: "React",
 
     },
-    
+
     {
         id: 3,
         icon: <TailwindCSS width={30} height={30} />,
@@ -53,7 +53,7 @@ const TechStack = [
         name: "VsCode",
 
     },
-    
+
 ]
 
 export default TechStack;

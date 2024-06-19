@@ -17,17 +17,20 @@ function Home() {
     const work = ['Frontend Developer', 2000, 'web Developer', 2000, 'Graphics Designer', 2000,];
 
     return (
-        <div name='Home' className=' max-2xl:mt-6 h-full min-h-screen w-full flex items-center '>
+        <div name='Home' className=' max-2xl:-mt-14 h-full min-h-screen w-full flex items-center '>
             <div className='section  max-md:flex-col-reverse max-md:mt-28 max-md:pt-20  gap-10 md:gap-1 md:justify-between  items-center md:flex-row-reverse  w-screen'>
                 <div className=' flex  flex-col gap-3 text-center  text-gray-700 w-max md:w-4/5 lg:mt-40 md:mt-16 max-xs:px-4'>
                     <h1 className='text-5xl max-xs:text-3xl lg:text-8xl font-bold '>
-                        <span className='block lg:text-7xl'>Hi There<span className='wave'>👋</span></span>
-                        <span>I'm </span>
+                        <span className='block lg:text-7xl dark:text-gray-400 text-gray-600'>
+                            Hi There
+                            <span className='wave'>👋</span>
+                        </span>
+                        <span className='dark:text-gray-400 text-gray-600'>I'm </span>
                         <span className='text-transparent bg-gradient-to-br from-cyan-300 to-blue-600 bg-clip-text max-xs:text-4xl'> ABIODUN </span>
                     </h1>
 
                     <p className='text-gray-400 text-xl xs:text-2xl mx-auto  font-semibold py-4 min-w-[16rem] xs:min-w-[25rem] max-w-[26rem]'>
-                        <span className='block xs:inline text-center '> I am a</span>
+                        <span className='block xs:inline text-center dark:text-gray-400 text-gray-600 '> I am a</span>
                         <span className='text-cyan-400 xs:pl-2'>
                             <TypeAnimation
                                 sequence={work}

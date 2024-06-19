@@ -12,7 +12,7 @@ module.exports = {
   theme: {
     extend: {
       colors:{
-          aba:"#22d3ee"
+          aba:"#22d3ee",
       },
     },
     fontFamily: {

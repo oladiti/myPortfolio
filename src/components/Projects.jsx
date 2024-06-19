@@ -34,7 +34,7 @@ const Projects = () => {
     };
     return (
         <div name="Projects" className=' projects max-xs:px-3 xs:px-2 md:-mt-80 lg:px-3 md:px-0 max-xs:-mt-80 lg:-mt-16 xl:-mt-44 xl:mb-80 mb-24  h-full min-h-screen w-full flex items-center  text-white'>
-            <div className='section  text-gray-400 xl:-mt-12'>
+            <div className='section  xl:-mt-12'>
                 <div className='md:-ml-2 max-xs:-ml-2 sm:-ml-2'>
                     <SectionHeading heading="Projects " secondHeading="Check Out Some of my work " />
                 </div>

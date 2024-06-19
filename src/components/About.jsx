@@ -18,7 +18,7 @@ class About extends Component {
                         <div className='mb-5  flex flex-col justify-center  '>
                             <img src={profile} alt="Profile" width="auto" height="auto" loading='lazy' className=' md:mt-20 xs:mt-20 xl:mt-4 brightness-150 cursor-pointer grayscale hover:grayscale-0 hover:scale-[1.02] transition-all delay-75 border-4 border-transparent hover:border-cyan-500 duration-300 rounded-2xl min-w-[240px] w-1/2 mx-auto  md:w-[270px]' />
                         </div>
-                        <div className="lg:mt-12 text-center flex flex-col px-4 xs:-ml-10 xs:px-14 sm:px-11 sm:-ml-10 lg:ml-20 lg:px-0 md:-ml-20 md:px-24 max-xs:px-4 md:py-0 w-screen  text-gray-400">
+                        <div className="lg:mt-12 text-center flex flex-col px-4 xs:-ml-10 xs:px-14 sm:px-11 sm:-ml-10 lg:ml-20 lg:px-0 md:-ml-20 md:px-24 max-xs:px-4 md:py-0 w-screen  dark:text-gray-400 text-gray-600">
                             <h4>Hey there,</h4>
                             <h1>I'm Oladiti Abiodun</h1>
                             <h3>Front end Web <u>Developer</u> | Graphics <u>Designer</u></h3>
@@ -31,12 +31,12 @@ class About extends Component {
                                 If you are looking for a Web Developer who is experienced, motivated, and dedicated to excellence,
                                 then I am your ideal candidate. I look forward to hearing from you and discussing how I can help you achieve your business goals.
                             </p>
-                            <div className='mt-3 text-gray-400  '>  My Tech Stack
-                                <ul className=' flex gap-5 z-40 flex-wrap pt-2 max-xs:mb-28 justify-center  '>
+                            <div className='mt-3 dark:text-gray-400 text-gray-600 '>  My Tech Stack
+                                <ul className=' flex gap-5 z-40 flex-wrap pt-2 max-xs:mb-28 justify-center items-center  '>
                                     {
                                         techStack.map(({ id, icon, name }) => {
                                             return (
-                                                <li key={id} className="  bg-black relative list-none group  dark:bg-black rounded-full w-10 h-10 ">
+                                                <li key={id} className=" relative list-none group rounded-full w-10 h-10 ">
                                                     <span className='z-20'>
                                                         {icon}
                                                     </span>

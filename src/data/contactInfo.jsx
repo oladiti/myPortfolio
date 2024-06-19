@@ -1,5 +1,4 @@
-import LinkedIn, { GitHub, GMail, Resume, Whatsapp } from "../components/Icons";
-import ResumeLink from "../assets/ola.pdf"
+import LinkedIn, { GitHub, GMail, Whatsapp } from "../components/Icons";
 const contactInfo = [
     {
         id: 1,

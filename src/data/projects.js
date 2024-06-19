@@ -37,7 +37,7 @@ const projects = [
     
     {
         img: myweatherapp,
-        name: "Simon Game",
+        name: "weather-app",
         demo: "https://oladiti-weather-application.netlify.app",
         code: "https://github.com/oladiti/Weather-Application",
         description: "this is my weather application built with React Js and Tailwind CSS in other to check your current weather condition.",

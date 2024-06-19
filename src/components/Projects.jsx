@@ -2,7 +2,6 @@ import React from 'react'
 import SectionHeading from './SectionHeading'
 import Project from './Project'
 import myProjects from '../data/projects'
-import GridLayout from './GridLayout'
 import Slider from "react-slick";
 
 

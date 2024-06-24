@@ -6,8 +6,8 @@ import Skill from './Skill'
 
 const Skills = () => {
     return (
-        <div name="Skills" className='py-10 h-full 2xl:-mt-96 max-xs:pt-24 lg:pt-52 xl:-mt-72 md:pt-2  mb-14 min-h-screen w-full flex items-center lg:px-5 xl:px-10'>
-            <div className="section  xs:px-6 sm:px-10  lg:px-5 xl:-mt-96 ">
+        <div name="Skills" className=' h-full  lg:pt-52 xl:-mt-[36rem] xl:pt-20 max-xs:-mt-20  md:pt-2  min-h-screen w-full flex items-center lg:px-5 xl:px-10'>
+            <div className="section  xs:px-6 sm:px-10  lg:px-5 max-xs:mt-32 ">
                 <div className=' max-xs:ml-0 xs:ml-4 md:ml-8 lg:ml-7 sm:-ml-2 xl:ml-3 dark:text-gray-400 text-gray-600 '>
                     <SectionHeading heading="Skills" secondHeading="These are the Technologies I've worked with " />
                 </div>

@@ -16,7 +16,7 @@ class About extends Component {
 
                     <div className='section  max-xs:-my-10 md:-mt-14   flex-col justify-between   lg:flex-row '>
                         <div className='mb-5  flex flex-col justify-center  '>
-                            <img src={profile} alt="Profile" width="auto" height="auto" loading='lazy' className=' md:mt-20 xs:mt-20 xl:mt-4 brightness-150 cursor-pointer grayscale hover:grayscale-0 hover:scale-[1.02] transition-all delay-75 border-4 border-transparent hover:border-cyan-500 duration-300 rounded-2xl min-w-[240px] w-1/2 mx-auto  md:w-[270px]' />
+                            <img src={profile} alt="Profile" width="auto" height="auto" loading='lazy' className=' md:mt-20 xs:mt-20 xl:mt-4 brightness-150 cursor-pointer grayscale hover:grayscale-0 hover:scale-[1.02] transition-all delay-75 border-4 border-transparent hover:border-aba duration-300 rounded-2xl min-w-[240px] w-1/2 mx-auto  md:w-[270px]' />
                         </div>
                         <div className="lg:mt-12 text-center flex flex-col px-4 xs:-ml-10 xs:px-14 sm:px-11 sm:-ml-10 lg:ml-20 lg:px-0 md:-ml-20 md:px-24 max-xs:px-4 md:py-0 w-screen  dark:text-gray-400 text-gray-600">
                             <h4>Hey there,</h4>

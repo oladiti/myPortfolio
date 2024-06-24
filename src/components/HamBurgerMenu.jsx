@@ -9,10 +9,10 @@ const HamBurgerMenu = ({ handleClick, navOpen }) => {
             {navOpen &&
                 <div className='group'>
                     <span className="group-hover:hidden">
-                        <Cancel color="gray" />
+                        <Cancel color="#22d3ee" />
                     </span>
                     <span className="hidden group-hover:block">
-                        <Cancel color="" />
+                        <Cancel color="#22d3ee" />
                     </span>
                 </div>
             }

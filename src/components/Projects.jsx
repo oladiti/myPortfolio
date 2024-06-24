@@ -32,12 +32,13 @@ const Projects = () => {
         ],
     };
     return (
-        <div name="Projects" className=' projects max-xs:px-3 xs:px-2 md:-mt-80 lg:px-3 md:px-0 max-xs:-mt-80 lg:-mt-16 xl:-mt-44 xl:mb-80 mb-24  h-full min-h-screen w-full flex items-center  text-white'>
-            <div className='section  xl:-mt-12'>
+        <div name="Projects" className='pt-44  projects max-xs:px-3 xs:px-2 md:-mt-80 lg:px-3 md:px-0 max-xs:-mt-80 lg:-mt-16 xl:-mt-24 xl:mb-80  h-full min-h-screen w-full flex items-center  text-white'>
+            <div className='section  xl:-mt-12 max-sm:-mt-20'>
                 <div className='md:-ml-2 max-xs:-ml-2 sm:-ml-2'>
                     <SectionHeading heading="Projects " secondHeading="Check Out Some of my work " />
                 </div>
-                <Slider {...settings} className='Service__container max-xs:-ml-1 sm:mr-0 md:mr-0  lg:-mr-3 xs:mr-1 xl:mr-3 '>
+                {/* max-xs:-ml-1 sm:mr-0 md:mr-0  lg:-mr-3 xs:mr-1 xl:mr-3 */}
+                <Slider {...settings} className='Service__container lg:-mx-3 xl:-mx-2 max-xs:-ml-1 '>
 
                     {/* <GridLayout style="sm:grid-cols-2 xs:px-4 md:max-w-2xl mx-auto lg:max-w-none lg:grid-cols-3 sm:px-2 md:px-2 "> */}
                     {myProjects.map((project) => {

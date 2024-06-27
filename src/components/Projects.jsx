@@ -32,8 +32,8 @@ const Projects = () => {
         ],
     };
     return (
-        <div name="Projects" className='pt-44  projects max-xs:px-3 xs:px-2 md:-mt-80 lg:px-3 md:px-0 max-xs:-mt-80 lg:-mt-16 xl:-mt-24 xl:mb-80  h-full min-h-screen w-full flex items-center  text-white'>
-            <div className='section  xl:-mt-12 max-sm:-mt-20'>
+        <div name="Projects" className='pt-44  projects max-xs:px-3 xs:px-2 md:-mt-80 lg:px-3 md:px-0 max-xs:-mt-80 lg:-mt-16 xl:-mt-96   h-full min-h-screen w-full flex items-center  text-white'>
+            <div className='section  xl:-mt-6 max-sm:-mt-36 xl:pb-96'>
                 <div className='md:-ml-2 max-xs:-ml-2 sm:-ml-2'>
                     <SectionHeading heading="Projects " secondHeading="Check Out Some of my work " />
                 </div>

@@ -17,8 +17,8 @@ function Home() {
     const work = ['Frontend Developer', 2000, 'web Developer', 2000, 'Graphics Designer', 2000,];
 
     return (
-        <div name='Home' className=' max-2xl:-mt-20 h-full min-h-screen w-full flex items-center '>
-            <div className='section  max-md:flex-col-reverse max-md:mt-28 max-md:pt-20  gap-10 md:gap-1 md:justify-between  items-center md:flex-row-reverse  w-screen'>
+        <div name='Home' className=' xl:-mt-20 md:mt-2 h-full min-h-screen w-full flex items-center '>
+            <div className='section   max-md:flex-col-reverse max-md:mt-28 max-md:pt-10 max-xs:mt-20  gap-10 md:gap-1 md:justify-between  items-center md:flex-row-reverse  w-screen'>
                 <div className=' flex  flex-col gap-3 text-center  text-gray-700 w-max md:w-4/5 lg:mt-40 md:mt-16 max-xs:px-4'>
                     <h1 className='text-5xl max-xs:text-3xl lg:text-8xl font-bold '>
                         <span className='block lg:text-7xl dark:text-gray-400 text-gray-600'>
@@ -40,10 +40,10 @@ function Home() {
                                 repeat={Infinity} />
                         </span>
                     </p>
-                    <ul className="flex items-center z-40 gap-3 md:gap-8 lg:gap-4  mx-auto w-44">
+                    <ul className="flex items-center z-40 gap-4  lg:gap-4  mx-auto w-44">
                         {contactInfo.map(({ id, link, name, icon, download }) => {
                             return (
-                                <li key={id} link={link} className={`bg-black  group relative w-8 h-8 flex justify-center items-center rounded-full p-1 sm:grayscale  cursor-pointer duration-[450ms] transition ease-in hover:grayscale-0 hover:scale-105 focus:grayscale-0 focus:scale-105 active:grayscale-0 active:scale-105`}>
+                                <li key={id} link={link} className={`bg-black  group relative w-10 h-8 flex justify-center items-center rounded-full mx-auto sm:grayscale  cursor-pointer duration-[450ms] transition ease-in hover:grayscale-0 hover:scale-105 focus:grayscale-0 focus:scale-105 active:grayscale-0 active:scale-105`}>
                                     <a href={link} download={download} target="_blank" rel='noferrer'>{icon}</a>
                                     <div className="flex scale-0 sm:group-hover:scale-100 group-focus:scale-100 transition ease-out duration-300 delay-100 origin-center justify-center items-center absolute z-50 -bottom-10 w-auto h-6 py-2 px-3 bg-gray-900 text-sm text-gray-300">
                                         {name}

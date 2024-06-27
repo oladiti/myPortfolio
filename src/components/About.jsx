@@ -9,12 +9,12 @@ class About extends Component {
     render() {
         return (
             <>
-                <div name='About' className=' py-8 max-xs:pt-20 lg:pt-32 md:pt-20   mb-64 xl:pt-28 xl:mb-72 max-xs:mb-48' >
+                <div name='About' className='xl:pt-20 max-xs:pt-28 lg:pt-32 md:pt-20    mb-64  xl:mb-72 max-xs:mb-48' >
                     <div className=' max-xs:-ml-0 xs:ml-10 sm:ml-8 md:pl-2  md:ml-16 lg:ml-16'>
                         <SectionHeading heading="About Me" />
                     </div>
 
-                    <div className='section  max-xs:-my-10 md:-mt-14   flex-col justify-between   lg:flex-row '>
+                    <div className='section  max-xs:-my-10 md:-mt-14 xl:pb-40   flex-col justify-between   lg:flex-row '>
                         <div className='mb-5  flex flex-col justify-center  '>
                             <img src={profile} alt="Profile" width="auto" height="auto" loading='lazy' className=' md:mt-20 xs:mt-20 xl:mt-4 brightness-150 cursor-pointer grayscale hover:grayscale-0 hover:scale-[1.02] transition-all delay-75 border-4 border-transparent hover:border-aba duration-300 rounded-2xl min-w-[240px] w-1/2 mx-auto  md:w-[270px]' />
                         </div>

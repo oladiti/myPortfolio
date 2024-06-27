@@ -12,7 +12,7 @@ const Navigation = ({ ulClass, liClass, handleClick, }) => {
                 return (
 
                     <li key={id}
-                        className={`md:ml-6 mt-4   lg:ml-12  capitalize font-medium  md:cursor-pointer text-gray-700 dark:text-gray-400 md:hover:scale-[1.15]   duration-500 dark:md:hover:text-gray-100 ${liClass}`}>
+                        className={`md:ml-6 mt-6    lg:ml-12  capitalize font-medium  md:cursor-pointer text-gray-700 dark:text-gray-400 md:hover:scale-[1.15]   duration-500 dark:md:hover:text-gray-100 ${liClass}`}>
                         {id === 6 ?
                             <a href={href} target="_blank" rel='noferrer'>{link}</a>
                             :

@@ -4,7 +4,7 @@ const socials = [
     {
         id: 1,
         name: "LinkedIn",
-        link: "https:/#/",
+        link: "https://www.linkedin.com/in/oladiti-abiodun-655384214",
         icon: <FaLinkedin size={22} />,
         style: "hover:bg-white rounded-tr-md hover:text-[#0B67C2]"
     },

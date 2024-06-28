@@ -32,7 +32,7 @@ const Services = () => {
     ],
   };
   return (
-    <div name='Service' className='Services  max-xs:pt-16 lg:pt-24 mb-24 md:pt-16'>
+    <div name='Service' className='Services  max-xs:pt-20 lg:pt-24 mb-28 md:pt-16'>
       <div className=' max-xs:-ml-0 pt-20 lg:pt-24 xs:ml-10 md:ml-16 xl:pl-2 lg:pl-1  sm:ml-9'>
         <SectionHeading heading="Service" secondHeading="These are the Services that i render " />
       </div>
@@ -46,7 +46,7 @@ const Services = () => {
               <img src={service.img} className='dark:bg-white' alt={service.name} style={{ width: "7rem", height: "5rem", }} loading='eager' />
               <h3 className='my-4  dark:text-white font-bold text-xl '>{service.name}</h3>
               <p className='text-center mb-4 dark:text-gray-400 text-gray-600 '>{service.description}</p>
-              <div><Link smooth duration={500} className=' bg-gradient-to-br from-aba to-blue-600 py-3 px-10 text-white mx-auto block text-center max-w-max rounded-md cursor-pointer  ' to="Contact">Learn more </Link></div>
+              <div><Link smooth duration={500} className=' bg-aba py-3 px-10 text-white mx-auto block text-center max-w-max rounded-md cursor-pointer  ' to="Contact">Learn more </Link></div>
             </div>
 
           ))}

@@ -26,7 +26,7 @@ function Home() {
                             <span className='wave'>👋</span>
                         </span>
                         <span className='dark:text-gray-400 text-gray-600'>I'm </span>
-                        <span className='text-transparent bg-gradient-to-br from-cyan-300 to-blue-600 bg-clip-text max-xs:text-4xl'> ABIODUN </span>
+                        <span className='text-transparent bg-aba bg-clip-text max-xs:text-4xl'> ABIODUN </span>
                     </h1>
 
                     <p className='text-gray-400 text-xl xs:text-2xl mx-auto  font-semibold py-4 min-w-[16rem] xs:min-w-[25rem] max-w-[26rem]'>
@@ -54,7 +54,7 @@ function Home() {
                     </ul>
                     <div className='py-5 -ml-40 max-lg:mx-auto '>
                         <div>
-                            <Link to="About" smooth duration={500} className='z-30 group  mx-auto dark:bg-gradient-to-br from-aba to-blue-600 bg-black  flex items-center  justify-center  gap-3 px-3 py-3  rounded-lg ease-linear duration-300 delay-75 transition-all cursor-pointer w-40 relative '>
+                            <Link to="About" smooth duration={500} className='z-30 group  mx-auto dark:bg-aba bg-black  flex items-center  justify-center  gap-3 px-3 py-3  rounded-lg ease-linear duration-300 delay-75 transition-all cursor-pointer w-40 relative '>
                                 <span className='pr-6 md:mx-auto sm:pr-0 sm:group-hover:-translate-x-5 sm:transition-transform delay-[1000ms] ease-out text-white'>About Me</span>
                                 <span className="absolute z-30 right-5 sm:-translate-y-7 sm:group-hover:translate-y-0 sm:scale-0 transition-all group-hover:scale-125 ease-in delay-200 animate-pulse duration-500 ">
                                     <ArrowDown />
@@ -63,7 +63,7 @@ function Home() {
                         </div>
 
                         <div className='-mt-12 justify-center flex' >
-                            <a href={resume} target="_blank" rel="noreferrer" download={true} className='z-30 max-lg:mt-16 group dark:bg-gradient-to-br from-aba to-blue-600 bg-black flex items-center justify-center gap-3   lg:ml-96 py-3  rounded-lg ease-linear duration-300 delay-75 transition-all cursor-pointer w-44 relative'>
+                            <a href={resume} target="_blank" rel="noreferrer" download={true} className='z-30 max-lg:mt-16 group dark:bg-aba bg-black flex items-center justify-center gap-3   lg:ml-96 py-3  rounded-lg ease-linear duration-300 delay-75 transition-all cursor-pointer w-44 relative'>
                                 <span className='pr-6 sm:pr-0 sm:group-hover:-translate-x-5  sm:transition-transform delay-[1000ms] ease-out text-white'>Resume</span>
                                 <span className="absolute right-5 sm:scale-0 transition-all group-hover:scale-100 ease-in delay-200 animate-pulse duration-500 ">
                                     <Download />

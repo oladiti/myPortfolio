@@ -120,7 +120,7 @@ const Contact = () => {
             </div>
 
 
-            <button className=' mx-auto  hover:text-blue-800 flex  group text-white bg-gradient-to-b from-cyan-500 to-blue-500 rounded-md font-semibold px-10 py-3 xl:py-3  hover:scale-[1.02] duration-500'>Let's Connect
+            <button className=' mx-auto  hover:text-blue-800 flex  group text-white bg-aba rounded-md font-semibold px-10 py-3 xl:py-3  hover:scale-[1.02] duration-500'>Let's Connect
               <span className="scale-0 -translate-x-10 origin-left group-hover:scale-100 group-hover:translate-x-3 duration-300 transition-all delay-200 ease-in-out"> <Submit />
               </span>
             </button>

@@ -3,7 +3,7 @@ import { Hamburger, Menu, Cancel } from './Icons';
 const HamBurgerMenu = ({ handleClick, navOpen }) => {
     return (
 
-        <div className='group md:hidden z-50 sm:px-8 mt-2  xs:pr-10 cursor-pointer ease-in-out transition-all duration-700'
+        <div className='group md:hidden z-50 sm:px-8 mt-3  xs:pr-10 cursor-pointer ease-in-out transition-all duration-700'
             onClick={handleClick}
         >
             {navOpen &&

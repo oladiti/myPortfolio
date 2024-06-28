@@ -3,7 +3,7 @@ const contactInfo = [
     {
         id: 1,
         name: "LinkedIn",
-        link: "https://",
+        link: "https://www.linkedin.com/in/oladiti-abiodun",
         icon: <LinkedIn />,
     },
     {

@@ -55,7 +55,7 @@ function Home() {
                     <div className='py-5 -ml-40 max-lg:mx-auto '>
                         <div>
                             <Link to="About" smooth duration={500} className='z-30 group  mx-auto dark:bg-aba bg-black  flex items-center  justify-center  gap-3 px-3 py-3  rounded-lg ease-linear duration-300 delay-75 transition-all cursor-pointer w-40 relative '>
-                                <span className='pr-6 md:mx-auto sm:pr-0 sm:group-hover:-translate-x-5 sm:transition-transform delay-[1000ms] ease-out text-white'>About Me</span>
+                                <span className='pr-6 md:mx-auto sm:pr-0 sm:group-hover:-translate-x-5 sm:transition-transform delay-[300ms] ease-out text-white dark:text-black'>About Me</span>
                                 <span className="absolute z-30 right-5 sm:-translate-y-7 sm:group-hover:translate-y-0 sm:scale-0 transition-all group-hover:scale-125 ease-in delay-200 animate-pulse duration-500 ">
                                     <ArrowDown />
                                 </span>
@@ -64,8 +64,8 @@ function Home() {
 
                         <div className='-mt-12 justify-center flex' >
                             <a href={resume} target="_blank" rel="noreferrer" download={true} className='z-30 max-lg:mt-16 group dark:bg-aba bg-black flex items-center justify-center gap-3   lg:ml-96 py-3  rounded-lg ease-linear duration-300 delay-75 transition-all cursor-pointer w-44 relative'>
-                                <span className='pr-6 sm:pr-0 sm:group-hover:-translate-x-5  sm:transition-transform delay-[1000ms] ease-out text-white'>Resume</span>
-                                <span className="absolute right-5 sm:scale-0 transition-all group-hover:scale-100 ease-in delay-200 animate-pulse duration-500 ">
+                                <span className='pr-6 sm:pr-0 sm:group-hover:-translate-x-5  sm:transition-transform delay-[300ms] ease-out text-white dark:text-black'>Resume</span>
+                                <span className="absolute right-5 sm:scale-0 transition-all group-hover:scale-100 ease-in delay-200 animate-pulse duration-500  ">
                                     <Download />
                                 </span>
                             </a>

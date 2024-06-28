@@ -46,7 +46,7 @@ const Services = () => {
               <img src={service.img} className='dark:bg-white' alt={service.name} style={{ width: "7rem", height: "5rem", }} loading='eager' />
               <h3 className='my-4  dark:text-white font-bold text-xl '>{service.name}</h3>
               <p className='text-center mb-4 dark:text-gray-400 text-gray-600 '>{service.description}</p>
-              <div><Link smooth duration={500} className=' bg-aba py-3 px-10 text-white mx-auto block text-center max-w-max rounded-md cursor-pointer  ' to="Contact">Learn more </Link></div>
+              <div><Link smooth duration={500} className=' bg-aba py-3 px-10 text-black mx-auto block text-center max-w-max rounded-md cursor-pointer  ' to="Contact">Learn more </Link></div>
             </div>
 
           ))}

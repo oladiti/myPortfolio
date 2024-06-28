@@ -24,7 +24,7 @@ const Footer = () => {
                                     <Link to={link} smooth duration={500}>
                                         <div className="flex items-center justify-between w-fit gap-2 font-semibold cursor-pointer">
                                             <ArrowRightLong />
-                                            <span className='bg-clip-text bg-gradient-to-r from-cyan-500 via-cyan-500 to-blue-500 group-hover:text-cyan-700 duration-500 group-hover:animate-pulse '>
+                                            <span className='bg-clip-text bg-aba group-hover:text-aba duration-500 group-hover:animate-pulse '>
                                                 {link}
                                             </span>
                                         </div>

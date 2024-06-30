@@ -40,7 +40,7 @@ const Footer = () => {
                                 <p className='flex items-center max-xs:justify-center dark:text-gray-400  gap-3 mb-1'>
                                     <GMail /> oladitiabiodun86@gmail.com
                                 </p>
-                                <p className='flex  items-center max-xs:justify-center max-xs:pl-10 '>
+                                <p className='flex  items-center max-xs:justify-center max-xs:pl-9 '>
                                     <Map /><span className="pt-4 dark:text-gray-400 max-xs:mx-3">127,Bamgbose Street, Lagos Island, Nigeria.</span>
                                 </p>
                             </div>

@@ -81,8 +81,8 @@ const Contact = () => {
   };
 
   return (
-    <div name="Contact" className=' mb-16 h-full min-h-screen w-full flex items-center md:pt-28 lg:pt-36  max-xs:-mt-36'>
-      <div className='section  text-gray-900 max-xs:pt-40'>
+    <div name="Contact" className=' mb-16 h-full min-h-screen w-full flex  items-center md:pt-4 lg:pt-36   max-xs:-mt-36'>
+      <div className='section max-xs:px-5 text-gray-900 max-xs:pt-40 xs:pt-36 xl:-mt-14'>
         <div className='md:-ml-2 sm:-ml-2 lg:-ml-3'>
           <SectionHeading heading="Contact" secondHeading="Fill the form to get in touch with me" />
         </div>

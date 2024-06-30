@@ -6,7 +6,7 @@ import contactInfo from '../data/contactInfo'
 const Footer = () => {
     const year = new Date().getFullYear().toString()
     return (
-        <div className='w-full  text-gray-600'>
+        <div className='w-full  text-gray-600 max-xs:px-5'>
             <div className="section footer pb-5 max-xs:px-4">
                 <div className="flex flex-wrap xs:pl-3 md:px-0 justify-between dark:text-gray-400 text-gray-600">
                     <div className="w-full sm:w-3/5 lg:w-2/5 pr-2">
@@ -36,12 +36,12 @@ const Footer = () => {
                     <div className="w-full mt-8 xs:w-3/5 sm:w-full lg:mt-0 lg:w-[30%] lg:pl-16">
                         <h3 className=' text-gray-600 text-2xl font-bold pb-4 max-xs:text-center '>Contact Information</h3>
                         <div className="flex  flex-col sm:flex-row lg:flex-col  gap-5 xs:gap-10 sm:gap-5 md:gap-10 justify-between">
-                            <div className='text-[0.9rem] font-advanced max-xs:px-8  mt-2'>
+                            <div className='text-[0.9rem] font-advanced   mt-2'>
                                 <p className='flex items-center max-xs:justify-center dark:text-gray-400  gap-3 mb-1'>
                                     <GMail /> oladitiabiodun86@gmail.com
                                 </p>
-                                <p className='flex  items-center max-xs:justify-center max-xs:mx-6 '>
-                                    <Map /><span className="pt-4 dark:text-gray-400 max-xs:mx-2">127,Bamgbose Street, Lagos Island, Nigeria.</span>
+                                <p className='flex  items-center max-xs:justify-center max-xs:pl-4 '>
+                                    <Map /><span className="pt-4 dark:text-gray-400 max-xs:mx-3">127,Bamgbose Street, Lagos Island, Nigeria.</span>
                                 </p>
                             </div>
                             <ul className="flex items-center max-xs:px-9 gap-5 md:gap-3 justify-start">

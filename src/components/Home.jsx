@@ -17,9 +17,9 @@ function Home() {
     const work = ['Frontend Developer', 2000, 'web Developer', 2000, 'Graphics Designer', 2000,];
 
     return (
-        <div name='Home' className=' xl:-mt-20 md:mt-2 h-full min-h-screen w-full flex items-center '>
-            <div className='section   max-md:flex-col-reverse max-md:mt-28 max-md:pt-10 max-xs:mt-20  gap-10 md:gap-1 md:justify-between  items-center md:flex-row-reverse  w-screen'>
-                <div className=' flex  flex-col gap-3 text-center  text-gray-700 w-max md:w-4/5 lg:mt-40 md:mt-16 max-xs:px-4'>
+        <div name='Home' className='  xl:-mt-20 md:mt-2 h-full min-h-screen w-full flex items-center xs:mb-24 '>
+            <div className='section  max-md:flex-col-reverse max-md:mt-28 max-md:pt-10 max-xs:mt-20  gap-10 md:gap-1 md:justify-between  items-center md:flex-row-reverse  w-screen'>
+                <div className=' flex flex-col gap-3 text-center  text-gray-700 w-max md:w-4/5 lg:mt-40 md:mt-16 max-xs:px-4'>
                     <h1 className='text-5xl max-xs:text-3xl lg:text-8xl font-bold '>
                         <span className='block lg:text-7xl dark:text-gray-400 text-gray-600'>
                             Hi There

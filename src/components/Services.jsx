@@ -32,8 +32,8 @@ const Services = () => {
     ],
   };
   return (
-    <div name='Service' className='Services  max-xs:pt-20 lg:pt-24 mb-28 md:pt-16'>
-      <div className=' max-xs:-ml-0 pt-20 lg:pt-24 xs:ml-10 md:ml-16 xl:pl-2 lg:pl-1  sm:ml-9'>
+    <div name='Service' className='Services max-xs:px-5  max-xs:pt-20 lg:pt-24 mb-28 md:pt-16 xs:pt-16'>
+      <div className=' max-xs:-ml-0 pt-20 lg:pt-32 xs:ml-10 md:ml-16 xl:pl-2 lg:pl-1  sm:ml-9'>
         <SectionHeading heading="Service" secondHeading="These are the Services that i render " />
       </div>
       <div className="slider-container md:px-10 lg:px-10 max-xs:px-3 xs:mx-12 sm:mx-10 xl:px-7">

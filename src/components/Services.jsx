@@ -41,7 +41,7 @@ const Services = () => {
 
           {services.map((service, index) => (
             <div key={index}
-              className="service-card w-full xl:mx-4  max-xs:w-fit sm:w-full md:w-full  h-full lg:w-[94%]    dark:border-aba border-2 shadow-lg"
+              className=" service-card w-full xl:mx-4 p-6  max-xs:w-fit sm:w-full md:w-full  h-full lg:w-[94%]    dark:border-aba border-2 shadow-lg"
             >
               <img src={service.img} className='dark:bg-white' alt={service.name} style={{ width: "7rem", height: "5rem", }} loading='eager' />
               <h3 className='my-4  dark:text-white font-bold text-xl '>{service.name}</h3>

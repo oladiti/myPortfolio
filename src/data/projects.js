@@ -5,8 +5,6 @@ import MyPort from "../assets/my-port.jpg"
 import myweatherapp from "../assets/weather-application (3).jpg"
 
 
-
-
 const projects = [
     
     {
@@ -58,7 +56,8 @@ const projects = [
             shadow: "shadow-[#763145]",
             cover: "from-[#763145]",
             display: " hidden group-hover:flex"
+        
         }
-    },
+    }
 ]
 export default projects;

@@ -26,12 +26,14 @@ class About extends Component {
                             </div>
                             <br></br>
                             <p className='max-xs:px-4 lg:px-5'>
-                                I am a certified Web Developer with two years of experience,
-                                who is  passionate about creating innovative solutions to challenging problems,
-                                also a highly motivated individual who always looking out for ways to enhance my skills
-                                by constantly learning new trend in technology to stay ahead of the curve.
-                                If you are looking for a Web Developer who is experienced, motivated, and dedicated to excellence,
-                                then I am your ideal candidate. I look forward to hearing from you and discussing how I can help you achieve your business goals.
+                                I am a passionate front-end web developer who is dedicated and certified in creating visually appealing and user-friendly websites.
+                                My strong grasp of HTML, CSS, and JavaScript enables me to effectively transform design concepts into functional and interactive web pages.
+                                Utilizing frameworks like React Js and Tailwind CSS, I have the ability to develop responsive and dynamic websites.
+                                I stay up-to-date with the latest industry trends and value collaboration and clear communication, making me an invaluable member of any team.
+                                I thoroughly enjoy working alongside designers, back-end developers, and stakeholders to bring projects to fruition.
+                                In my free time, I actively research new web technologies and provide guidance to aspiring developers.
+                                With my unique blend of creativity, technical expertise, and enthusiasm,
+                                I am poised to make significant contributions to the field of front-end development.
                             </p>
                             <div className='mt-3 dark:text-gray-400 text-gray-600 '>  My Tech Stack
                                 <ul className=' flex gap-5 z-40 flex-wrap pt-2 max-xs:mb-28 justify-center items-center  max-xs:px-2 '>

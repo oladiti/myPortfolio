@@ -25,7 +25,7 @@ const Navbar = ({ theme, setTheme }) => {
             <div className='fixed -mt-2   w-full max-w-[100vw] shadow-2xl bg-gradient-to-b from-white  via-white to-transparent z-50 bg-opacity-[0.9] border-b-2 border-gray-500'>
 
                 <div className=' bg-white dark:bg-black duration-500 flex justify-between  items-center max-xs:-mr-1 max-xl:px-4 max-w-screen-2xl'>
-                    <div className=' xs:ml-5 max-xs:ml-0 sm:ml-3 max-lg:-mr-4 xl:ml-16 mt-3.5'>
+                    <div className=' xs:ml-5 max-xs:ml-0 sm:ml-3 max-lg:-mr-4 xl:ml-20 mt-3.5'>
                         {/* <a href="/" className=' cursor-pointer'><Logo /></a> */}
                         <a href="/"><img src={Logo} alt="" style={{ width: 78, height: 75 }} className=' max-md:ml-2' /></a>
                     </div>

@@ -9,7 +9,7 @@ class About extends Component {
     render() {
         return (
             <>
-                <div name='About' className='xl:pt-20 max-xs:pt-24 xs:pt-24 lg:pt-32 md:pt-20 md:pb-14    mb-64  xl:mb-72 max-xs:mb-48' >
+                <div name='About' className='xl:pt-4 max-xs:pt-16 xs:pt-24 lg:pt-32 md:pt-20 md:pb-14    mb-64  xl:mb-72 max-xs:mb-48' >
                     <div className=' max-xs:ml-5 xs:ml-10 sm:ml-8 md:pl-2  md:ml-16 lg:ml-16'>
                         <SectionHeading heading="About Me" />
                     </div>
@@ -21,7 +21,7 @@ class About extends Component {
                         <div className="lg:mt-12 text-center flex flex-col px-4 xs:-ml-10 xs:px-14 sm:px-11 sm:-ml-10 lg:ml-20 lg:px-0 md:-ml-20 md:px-24 max-xs:px-5 md:py-0 w-screen  dark:text-gray-400 text-gray-600">
                             <br></br>
                             <br></br>
-                            <p className='max-xs:px-4 lg:px-5'>
+                            <p className='max-xs:px-4 lg:px-5 max-xs:-mt-12'>
                                 I am a passionate front-end web developer who is dedicated and certified in creating visually appealing and user-friendly websites.
                                 My strong grasp of HTML, CSS, and JavaScript enables me to effectively transform design concepts into functional and interactive web pages.
                                 Utilizing frameworks like React Js and Tailwind CSS, I have the ability to develop responsive and dynamic websites.

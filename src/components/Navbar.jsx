@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import HamBurgerMenu from './HamBurgerMenu';
 import Navigation from './Navigation';
-import Logo from '../assets/logo(3).png';
+import Logo from '../assets/logo.webp';
 import toggleLight from '../assets/dark-moon.png';
 import toggleDark from '../assets/light-moon.png';
 

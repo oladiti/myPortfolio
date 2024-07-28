@@ -2,7 +2,7 @@ import React from 'react'
 import { TypeAnimation } from 'react-type-animation';
 import { Link } from 'react-scroll';
 import { ArrowDown } from "./Icons";
-import AB from "../assets/Ab.png"
+import AB from "../assets/Abbey.webp"
 import contactInfo from '../data/contactInfo';
 import { Download } from './Icons';
 import resume from "../assets/ola.pdf";

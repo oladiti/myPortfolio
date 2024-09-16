@@ -73,7 +73,7 @@ function Home() {
                     </div>
                 </div>
                 <div className=" ">
-                    <img src={AB} alt="" style={{ width: "20rem", height: "20rem", }} loading='eager' className='  image-element border-4 border-gray-600 dark:border-white border-double  xl:ml-2 ml-2 max-sm:w-52 xl:mt-24  mx-auto max-sm:h-52  ' />
+                    <img src={AB} alt="" style={{ width: "20rem"}} loading='eager' className=' max-lg:h-[20]  image-element border-4 border-gray-600 dark:border-white border-double  xl:ml-2 ml-2 max-sm:w-52 xl:mt-24  mx-auto   ' />
                 </div>
 
             </div>

@@ -41,7 +41,7 @@ const Footer = () => {
                                     <GMail /> oladitiabiodun86@gmail.com
                                 </p>
                                 <p className='flex  items-center max-xs:justify-center max-xs:pl-9 '>
-                                    <Map /><span className="pt-4 dark:text-gray-400 max-xs:mx-3">127,Bamgbose Street, Lagos Island, Nigeria.</span>
+                                    <Map /><span className="pt-4 dark:text-gray-400 max-xs:mx-3 xl:px-4 ">127,Bamgbose Street, Lagos Island, Nigeria.</span>
                                 </p>
                             </div>
                             <ul className="flex items-center max-xs:px-9 gap-5 md:gap-3 justify-start">

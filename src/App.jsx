@@ -34,7 +34,7 @@ const App = () => {
       <Navbar theme={theme} setTheme={setTheme} />
       <AnimatedComponent>
         <Home />
-      </AnimatedComponent>
+      
       <div data-aos="flip-left" data-aos-duration="1000">
         <About />
       </div>
@@ -48,7 +48,9 @@ const App = () => {
       </div>
       <Footer />
       <BackToTopButton />
+      </AnimatedComponent>
     </div >
+
 
   )
 }

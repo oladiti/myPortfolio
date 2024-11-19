@@ -10,7 +10,7 @@ const projects = [
     {
         img: Ladyspride,
         name: "ladys pride hairdresser salon",
-        demo: "https://www.ladyspride.org",
+        demo: "https://ladyspride.netlify.app",
         code: "https://github.com/oladiti/ladyspride",
         description: "An hairdresser salon, built with Html, Css and Javascript.",
         style: {

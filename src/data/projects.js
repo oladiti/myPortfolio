@@ -23,7 +23,7 @@ const projects = [
     {
         img: Hotel,
         name: "Hotel lawa",
-        demo: "https://www.hotellawa.net",
+        demo: "https://hotellawa.netlify.app",
         code: "https://github.com/oladiti/hotellawa",
         description: "Hotel lawa is an hotel website for room reservation built with Html, Css and Javascript",
         style: {

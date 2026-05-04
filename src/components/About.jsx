@@ -8,7 +8,7 @@ const About = () => (
       <SectionHeading heading="About Me" />
     </div>
 
-    <div className="section max-xs:-my-10 md:-mt-14 xl:pb-40 flex flex-col justify-between lg:flex-row">
+    <div className="section xl:pb-20 flex flex-col justify-between lg:flex-row">
       <div className="mb-5 flex flex-col justify-center xl:ml-3">
         <img
           src={profile}

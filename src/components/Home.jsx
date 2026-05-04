@@ -44,7 +44,7 @@ function Home() {
             ))}
           </ul>
 
-          <div className="py-5 -ml-40 max-lg:mx-auto">
+          <div className="py-5 max-lg:mx-auto">
             <div>
               <Link to="About" smooth duration={500} className="z-30 group mx-auto dark:bg-aba bg-black flex items-center justify-center gap-3 px-3 py-3 rounded-lg ease-linear duration-300 delay-75 transition-all cursor-pointer w-40 relative">
                 <span className="pr-6 md:mx-auto sm:pr-0 sm:group-hover:-translate-x-5 sm:transition-transform delay-[300ms] ease-out text-white dark:text-black">About Me</span>
@@ -54,7 +54,7 @@ function Home() {
               </Link>
             </div>
             <div className="-mt-12 justify-center flex">
-              <a href={resume} target="_blank" rel="noopener noreferrer" download className="z-30 max-lg:mt-16 group dark:bg-aba bg-black flex items-center justify-center gap-3 lg:ml-96 py-3 rounded-lg ease-linear duration-300 delay-75 transition-all cursor-pointer w-44 relative">
+              <a href={resume} target="_blank" rel="noopener noreferrer" download className="z-30 max-lg:mt-16 group dark:bg-aba bg-black flex items-center justify-center gap-3 mx-auto py-3 rounded-lg ease-linear duration-300 delay-75 transition-all cursor-pointer w-44 relative">
                 <span className="pr-6 sm:pr-0 sm:group-hover:-translate-x-5 sm:transition-transform delay-[300ms] ease-out text-white dark:text-black">Resume</span>
                 <span className="absolute right-5 sm:scale-0 transition-all group-hover:scale-100 ease-in delay-200 animate-pulse duration-500">
                   <Download />
@@ -68,9 +68,8 @@ function Home() {
           <img
             src={AB}
             alt=""
-            style={{ width: "20rem" }}
+            className="w-52 sm:w-64 md:w-72 lg:w-80 xl:w-96 h-auto max-lg:h-[20] image-element border-4 border-gray-600 dark:border-white border-double xl:ml-2 ml-2 max-sm:w-52 xl:mt-24 mx-auto"
             loading="eager"
-            className="max-lg:h-[20] image-element border-4 border-gray-600 dark:border-white border-double xl:ml-2 ml-2 max-sm:w-52 xl:mt-24 mx-auto"
           />
         </div>
       </div>

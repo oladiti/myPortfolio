@@ -44,7 +44,7 @@ const Services = () => (
       <SectionHeading heading="Services" secondHeading="These are the services that I render" />
     </div>
     <div className="slider-container md:px-10 lg:px-10 max-xs:px-3 xs:mx-12 sm:mx-10 xl:px-7">
-      <Slider {...SLIDER_SETTINGS} className="Service__container max-xs:-ml-1 sm:mr-0 md:mr-0 lg:-mr-3 xs:mr-1 xl:mr-3">
+      <Slider {...SLIDER_SETTINGS} className="Service__container sm:mr-0 md:mr-0 xs:mr-1 xl:mr-3">
         {services.map((service) => (
           <ServiceCard key={service.name} service={service} />
         ))}

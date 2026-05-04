@@ -81,7 +81,7 @@ const Contact = () => {
   };
 
   return (
-    <div name="Contact" className="mb-56 h-full min-h-screen w-full flex max-xs:-mt-16 items-center md:pt-4 lg:pt-36 xl:pt-4">
+    <div name="Contact" className="mb-56 h-full min-h-screen w-full flex items-center md:pt-4 lg:pt-36 xl:pt-4">
       <div className="section max-xs:px-5 text-gray-900 max-xs:pt-28 xs:pt-36 xl:-mt-4">
         <div className="md:-ml-2 sm:-ml-2 lg:-ml-3">
           <SectionHeading heading="Contact" secondHeading="Fill the form to get in touch with me" />
@@ -90,8 +90,7 @@ const Contact = () => {
           <img
             src={con}
             alt=""
-            style={{ width: 800, height: 410 }}
-            className="md:w-80 lg:w-fit lg:-ml-1 xl:w-fit md:h-80 max-xs:h-56 xs:h-64 sm:px-2"
+            className="w-full max-w-lg md:max-w-md lg:max-w-md xl:max-w-lg h-auto md:h-80 max-xs:h-56 xs:h-64 sm:px-2 object-contain"
           />
           <form onSubmit={handleSubmit} className="flex gap-3 flex-col w-full md:w-1/2">
             <div className="sm:px-2">

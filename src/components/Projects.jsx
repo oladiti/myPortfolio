@@ -17,12 +17,12 @@ const SLIDER_SETTINGS = {
 };
 
 const Projects = () => (
-  <section name="Projects" className="pt-6 projects max-xs:px-3 xs:px-2 mb-28 md:-mt-96 lg:px-3 md:px-0 max-xs:-mt-80 max-xs:-mb-28 lg:-mt-16 xl:-mt-96 xl:pt-28 h-full min-h-screen w-full flex items-center text-white">
-    <div className="section xl:pb-96 max-xs:pt-56 max-sm:-mt-36 max-xs:mb-20 max-xs:px-5">
-      <div className="md:-ml-2 max-xs:-ml-2 sm:-ml-2 lg:-ml-5">
+  <section name="Projects" className="pt-6 projects max-xs:px-3 xs:px-2 mb-28 lg:px-3 md:px-0 xl:pt-28 h-full min-h-screen w-full flex items-center text-white">
+    <div className="section xl:pb-20 max-xs:pt-56 max-xs:mb-10 max-xs:px-5">
+      <div className="ml-2 sm:ml-2 lg:ml-2">
         <SectionHeading heading="Projects" secondHeading="Check Out Some of my work" />
       </div>
-      <Slider {...SLIDER_SETTINGS} className="Service__container lg:-mx-3 xl:-mx-2 max-xs:-ml-1">
+      <Slider {...SLIDER_SETTINGS} className="Service__container">
         {projects.map((project) => (
           <Project key={project.id} project={project} />
         ))}

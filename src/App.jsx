@@ -14,50 +14,44 @@ import "slick-carousel/slick/slick-theme.css";
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 
-
-// setting the theme variable
 const App = () => {
-
   const current_theme = localStorage.getItem("current_theme");
+  const [theme, setTheme] = useState(current_theme || 'light');
 
-  const [theme, setTheme] = useState(current_theme ? current_theme : 'light');
+  useEffect(() => {
+    AOS.init({
+      duration: 3000,
+      easing: 'ease-in-out',
+      once: true,
+    });
+  }, []);
 
   useEffect(() => {
     localStorage.setItem('current_theme', theme);
-
-  }, [theme])
-
+    document.documentElement.classList.toggle('dark', theme === 'dark');
+  }, [theme]);
 
   return (
-
-    <div className={`container ${theme} max-w-screen-2xl overflow-hidden`}>
+    <div className={`container ${theme}  max-w-screen-xl  overflow-hidden md:ml-[200px]`}>
       <Navbar theme={theme} setTheme={setTheme} />
       <AnimatedComponent>
         <Home />
-      
-      <div data-aos="flip-left" data-aos-duration="1000">
-        <About />
-      </div>
-      <Projects />
-      <div data-aos="flip-right" data-aos-duration="1000">
-        <Skills />
-      </div>
-      <Services />
-      <div data-aos="slide-left" data-aos-duration="1000">
-        <Contact />
-      </div>
-      <Footer />
-      <BackToTopButton />
+        <div data-aos="flip-left" data-aos-duration="1000">
+          <About />
+        </div>
+        <Projects />
+        <div data-aos="flip-right" data-aos-duration="1000">
+          <Skills />
+        </div>
+        <Services />
+        <div data-aos="slide-left" data-aos-duration="1000">
+          <Contact />
+        </div>
+        <Footer />
+        <BackToTopButton />
       </AnimatedComponent>
-    </div >
-
-
-  )
-}
+    </div>
+  );
+};
 
 export default App;
-AOS.init({
-  duration: 3000,
-  easing: 'ease-in-out',
-  once: false,
-});

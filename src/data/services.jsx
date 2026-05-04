@@ -3,51 +3,27 @@ import Graphics from '../assets/art-icon.png';
 import Search from '../assets/website-seo-icon.png';
 import Web from '../assets/it-icon.png';
 
-
-
-
 const services = [
   {
     name: "Web Development",
-    description: "Creating a visual appealing website that fit into any screen devices  to reach the global markets.",
+    description: "Creating visually appealing websites that fit any screen size to reach global markets.",
     img: Webdev,
-    style: {
-      // // width: "120",
-      // // height: "40",
-      // Border: "3px solid red"
-    }
   },
   {
     name: "Graphics Design",
-    description: "Designed beautiful graphics like logo, flyer and ID card for your brand to stand out",
+    description: "Designing beautiful graphics like logos, flyers, and ID cards to make your brand stand out.",
     img: Graphics,
-    style: {
-      // // width: "120",
-      // // height: "40",
-      // Border: "3px solid red"
-    }
   },
   {
     name: "S.E.O",
-    description: "provide the chance for  people to view your website by optimizing it for google searh engine",
+    description: "Optimizing your website for search engines to increase visibility and drive organic traffic.",
     img: Search,
-    style: {
-      // // width: "120",
-      // // height: "40",
-      // Border: "3px solid red"
-    }
   },
   {
     name: "Web Maintenance",
-    description: "Provide ongoing maintenance and support to keep website runing smoothly and secure.",
+    description: "Providing ongoing maintenance and support to keep your website running smoothly and securely.",
     img: Web,
-    style: {
-      // width: "120",
-      // height: "40",
-      // Border: "3px solid red"
-    }
   },
 ];
-
 
 export default services;

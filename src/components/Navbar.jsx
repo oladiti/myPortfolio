@@ -1,49 +1,174 @@
-import React, { useState } from 'react';
-import HamBurgerMenu from './HamBurgerMenu';
+import { useState, useEffect } from 'react';
 import Navigation from './Navigation';
 import Logo from '../assets/logo.webp';
 import toggleLight from '../assets/dark-moon.png';
 import toggleDark from '../assets/light-moon.png';
 
-
 const Navbar = ({ theme, setTheme }) => {
+  const [navOpen, setNavOpen] = useState(false);
 
-    const toggleMode = () => {
-        theme == 'light' ? setTheme('dark') : setTheme('light');
-    }
+  const toggleMode = () => {
+    setTheme(prev => prev === 'light' ? 'dark' : 'light');
+  };
 
+  const closeNav = () => {
+    setNavOpen(false);
+  };
 
-    const [navOpen, setNavOpen] = useState(false);
-    const handleClick = () => {
-        setNavOpen(prevValue => !prevValue)
-    }
+  useEffect(() => {
+    document.body.style.overflow = navOpen ? 'hidden' : 'unset';
+    return () => {
+      document.body.style.overflow = 'unset';
+    };
+  }, [navOpen]);
 
+  return (
+    <>
+      <header
+        className={`fixed top-0 left-0 w-full z-40 h-[6.8rem] transition-all duration-300 md:pl-[150px] ${
+          theme === 'dark'
+            ? 'bg-black/95 backdrop-blur-md'
+            : 'bg-white/95 backdrop-blur-md shadow-sm'
+        }`}
+      >
+        <div className="flex justify-end items-center px-4 py-3">
+          <button
+            onClick={toggleMode}
+            className="p-2.5 rounded-full bg-aba/10 hover:bg-aba/20 transition-all duration-300 hover:rotate-12"
+            aria-label={`Switch to ${theme === 'light' ? 'dark' : 'light'} mode`}
+          >
+            <img
+              src={theme === 'light' ? toggleLight : toggleDark}
+              alt=""
+              width={22}
+              height={20}
+            />
+          </button>
 
-    return (
-        <>
-            {/* <div className='fixed w-full max-w-[100vw] h-4 dark:bg-white'xl:-ml-24> */}
-            <div className='fixed -mt-2    w-full max-w-[100vw] shadow-2xl bg-gradient-to-b from-white  via-white to-transparent z-50 bg-opacity-[0.9] border-b-2 border-gray-500'>
+          <button
+            onClick={() => setNavOpen(prev => !prev)}
+            className={`md:hidden p-2 rounded-full transition-colors duration-300 ${
+              theme === 'dark' ? 'bg-zinc-800 hover:bg-zinc-700' : 'bg-gray-100 hover:bg-gray-200'
+            }`}
+            aria-label={navOpen ? 'Close menu' : 'Open menu'}
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="22"
+              height="22"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              strokeWidth="2"
+              strokeLinecap="round"
+              strokeLinejoin="round"
+              className={theme === 'dark' ? 'text-gray-300' : 'text-gray-700'}
+            >
+              {navOpen ? (
+                <>
+                  <line x1="18" y1="6" x2="6" y2="18"></line>
+                  <line x1="6" y1="6" x2="18" y2="18"></line>
+                </>
+              ) : (
+                <>
+                  <line x1="3" y1="6" x2="21" y2="6"></line>
+                  <line x1="3" y1="12" x2="21" y2="12"></line>
+                  <line x1="3" y1="18" x2="21" y2="18"></line>
+                </>
+              )}
+            </svg>
+          </button>
+        </div>
+      </header>
 
-                <div className=' bg-white dark:bg-black duration-500 flex justify-between  items-center max-xs:-mr-1 max-xl:px-4 max-w-screen-2xl'>
-                    <div className=' xs:ml-5 max-xs:ml-0 sm:ml-3 max-lg:-mr-4  mt-3.5'>
-                        
-                        <a href="/"><img src={Logo} alt="" style={{ width: 80, height: 75 }}  className='  max-md:ml-2 xl:ml-14 md:ml-11' /></a>
-                    </div>
-                    <Navigation ulClass="hidden md:flex md:mr-28 lg:mr-40 xl:mr-52" liClass="" />
-                    <HamBurgerMenu handleClick={handleClick} navOpen={navOpen} />
+      <aside
+        className={`fixed top-0 left-0 h-full z-50 w-full sm:w-72 md:w-[200px] ${
+          theme === 'dark'
+            ? 'bg-gradient-to-b from-zinc-900 via-zinc-900 to-zinc-950'
+            : 'bg-gradient-to-b from-white via-white to-gray-50'
+        } shadow-2xl md:translate-x-0 transition-transform duration-500 ease-in-out ${
+          navOpen ? 'translate-x-0' : '-translate-x-full'
+        }`}
+      >
+        <div className="flex flex-col h-full">
+          <div className={`flex items-center justify-center px-6 py-6 border-b ${
+            theme === 'dark' ? 'border-gray-700' : 'border-gray-200'
+          }`}>
+            <a href="/" className="relative">
+              <img
+                src={Logo}
+                alt="Oladiti Abiodun Logo"
+                width={60}
+                height={55}
+                className="transition-all duration-300 hover:scale-110 hover:drop-shadow-lg"
+              />
+            </a>
+            <button
+              onClick={closeNav}
+              className={`md:hidden absolute right-6 p-2 rounded-full transition-all duration-300 hover:rotate-90 ${
+                theme === 'dark' ? 'hover:bg-zinc-700' : 'hover:bg-gray-200'
+              }`}
+              aria-label="Close menu"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                strokeWidth="2.5"
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                className={theme === 'dark' ? 'text-gray-300' : 'text-gray-700'}
+              >
+                <line x1="18" y1="6" x2="6" y2="18"></line>
+                <line x1="6" y1="6" x2="18" y2="18"></line>
+              </svg>
+            </button>
+          </div>
 
-                    <Navigation handleClick={handleClick} ulClass={`${navOpen ? "-translate-x-0 " : "translate-x-full"} duration-700 ease-in-out flex flex-col h-screen bg-white dark:bg-black w-screen  top-0 right-0 absolute items-center justify-center md:scale-0`} liClass="mt-5 py-2 text-lg" />
+          <nav className="flex-1 py-8 overflow-y-auto flex flex-col items-center justify-center">
+            <Navigation
+              theme={theme}
+              handleClick={closeNav}
+              ulClass="flex flex-col items-center w-full"
+              liClass="text-base sm:text-lg font-medium px-4 sm:px-6 py-3 sm:py-4 w-full text-center"
+            />
+          </nav>
 
-                </div>
-                <div className='moon flex justify-end -mt-14 pb-1.5   w-10 bg-aba  cursor-pointer   max-xs:mr-24 xs:mr-28 mx-auto md:mr-20'>
-                    <img onClick={() => toggleMode()} src={theme == 'light' ? toggleLight : toggleDark} alt="" style={{ width: 25, height: 22 }} className='toggle-icon   mt-3 md:mr-2 mx-auto max-xs:mr-2 xs:mr-2' />
-                </div>
-            </div>
+          <div className={`px-6 py-5 border-t ${theme === 'dark' ? 'border-gray-700' : 'border-gray-200'}`}>
+            <button
+              onClick={toggleMode}
+              className={`flex items-center justify-center gap-3 w-full px-4 py-3 rounded-lg transition-all duration-300 hover:scale-105 ${
+                theme === 'dark'
+                  ? 'bg-zinc-800 text-gray-300 hover:bg-zinc-700'
+                  : 'bg-gray-100 text-gray-700 hover:bg-gray-200'
+              }`}
+              aria-label={`Switch to ${theme === 'light' ? 'dark' : 'light'} mode`}
+            >
+              <img
+                src={theme === 'light' ? toggleLight : toggleDark}
+                alt=""
+                width={20}
+                height={18}
+              />
+              <span className="font-medium">
+                {theme === 'light' ? 'Dark Mode' : 'Light Mode'}
+              </span>
+            </button>
+          </div>
+        </div>
+      </aside>
 
-            {/* <div className="md:hidden h-20 w-full bg-white "></div> */}
-
-        </>
-    )
-}
+      {navOpen && (
+        <div
+          className="fixed inset-0 z-40 bg-black/50 backdrop-blur-sm md:hidden"
+          onClick={closeNav}
+        />
+      )}
+    </>
+  );
+};
 
 export default Navbar;

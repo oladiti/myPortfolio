@@ -1,33 +1,27 @@
-import React from 'react'
-import { Link } from 'react-scroll'
-import navLinks from '../data/navlinks'
+import { Link } from 'react-scroll';
+import navLinks from '../data/navlinks';
 
+const Navigation = ({ theme, ulClass, liClass, handleClick }) => (
+  <ul className={ulClass}>
+    {navLinks.map(({ id, link }) => (
+      <li key={id} className={`capitalize font-medium cursor-pointer ${liClass}`}>
+        <Link
+          onClick={handleClick}
+          to={link}
+          smooth
+          duration={500}
+          spy={true}
+          offset={-50}
+          activeClass="!text-aba !font-bold"
+          className={`cursor-pointer block transition-all duration-300 relative py-2 ${
+            theme === 'dark' ? 'text-gray-400 hover:!text-aba' : 'text-gray-700 hover:!text-aba'
+          }`}
+        >
+          {link}
+        </Link>
+      </li>
+    ))}
+  </ul>
+);
 
-
-const Navigation = ({ ulClass, liClass, handleClick, }) => {
-    return (
-        <ul className={ulClass}>
-
-            {navLinks.map(({ id, link, href }) => {
-                return (
-
-                    <li key={id}
-                        className={`md:mx-4 mt-6 lg:ml-10  capitalize font-medium  md:cursor-pointer text-gray-700 dark:text-gray-400 md:hover:scale-[1.15]   duration-500 dark:md:hover:text-gray-100 ${liClass}`}>
-                        {id === 6 ?
-                            <a href={href} target="_blank" rel='noferrer'>{link}</a>
-                            :
-                            <Link
-                                onClick={handleClick}
-                                to={link} smooth duration={500}> {link}
-                            </Link>
-                        }
-                    </li>
-
-
-                )
-            })}
-        </ul>
-    )
-}
-
-export default Navigation
+export default Navigation;

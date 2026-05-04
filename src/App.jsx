@@ -32,7 +32,7 @@ const App = () => {
   }, [theme]);
 
   return (
-    <div className={`container ${theme}  max-w-screen-2xl  overflow-hidden md:ml-[200px]`}>
+    <div className={`container ${theme}  max-w-screen-2xl overflow-hidden md:ml-[100px]`}>
       <Navbar theme={theme} setTheme={setTheme} />
       <AnimatedComponent>
         <Home />

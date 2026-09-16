@@ -4,7 +4,7 @@ const contactInfo = [
   {
     id: 1,
     name: "LinkedIn",
-    link: "https://www.linkedin.com/in/oladiti-abiodun",
+    link: "https://www.linkedin.com/in/oladiti-abiodun1",
     icon: <LinkedIn />,
   },
   {

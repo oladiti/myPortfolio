@@ -1,4 +1,4 @@
-import ReactJs, { CSS, Git, GitHub, HTML, JS, TailwindCSS, VSCode } from "../components/SkilIcons";
+import { ReactJs, CSS, Git, GitHub, HTML, JS, TailwindCSS, VSCode } from "../components/ui/BrandIcons";
 
 const skills = [
   {

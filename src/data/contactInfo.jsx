@@ -1,4 +1,4 @@
-import LinkedIn, { GitHub, GMail, Whatsapp } from "../components/Icons";
+import { LinkedIn, GitHub, GMail, Whatsapp } from "../components/ui/BrandIcons";
 
 const contactInfo = [
   {
@@ -22,7 +22,7 @@ const contactInfo = [
   {
     id: 4,
     name: "WhatsApp",
-    link: "https://wa.me/09017686057",
+    link: "https://wa.me/2349017686057",
     icon: <Whatsapp />,
   },
 ];

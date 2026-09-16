@@ -1,4 +1,4 @@
-import ReactJs, { JS, HTML, CSS, TailwindCSS, Git, GitHub, VSCode } from "../components/SkilIcons";
+import { ReactJs, JS, HTML, CSS, TailwindCSS, Git, GitHub, VSCode } from "../components/ui/BrandIcons";
 
 const TechStack = [
   { id: 1, icon: <HTML width={30} height={30} />, name: "HTML" },

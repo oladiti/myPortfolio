@@ -1,56 +1,54 @@
-import { useEffect, useState } from 'react';
-import About from './components/About';
-import Skills from './components/Skills';
-import Home from './components/Home';
-import Navbar from './components/Navbar';
-import Projects from './components/Projects';
-import Contact from './components/Contact';
-import Services from './components/Services';
-import Footer from './components/Footer';
-import BackToTopButton from './components/BackToTopButton';
-import AnimatedComponent from './components/AnimatedComponent';
-import "slick-carousel/slick/slick.css";
-import "slick-carousel/slick/slick-theme.css";
+import { useEffect } from 'react';
+import ThemeProvider from './context/ThemeContext';
+import About from './components/sections/About';
+import Skills from './components/sections/Skills';
+import Home from './components/sections/Home';
+import Navbar from './components/layout/Navbar';
+import Projects from './components/sections/Projects';
+import Contact from './components/sections/Contact';
+import Services from './components/sections/Services';
+import Footer from './components/layout/Footer';
+import BackToTopButton from './components/ui/BackToTopButton';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
+import useTheme from './hooks/useTheme';
 
-const App = () => {
-  const current_theme = localStorage.getItem("current_theme");
-  const [theme, setTheme] = useState(current_theme || 'light');
+const AppContent = () => {
+  const { theme } = useTheme();
 
   useEffect(() => {
     AOS.init({
-      duration: 3000,
-      easing: 'ease-in-out',
+      duration: 800,
+      easing: 'ease-out',
       once: true,
+      offset: 80,
     });
   }, []);
 
-  useEffect(() => {
-    localStorage.setItem('current_theme', theme);
-    document.documentElement.classList.toggle('dark', theme === 'dark');
-  }, [theme]);
-
   return (
-    <div className={`container ${theme}  max-w-screen-2xl overflow-hidden md:ml-[130px]`}>
-      <Navbar theme={theme} setTheme={setTheme} />
-      <AnimatedComponent>
+    <div className={`min-h-screen transition-colors duration-300 ${
+      theme === 'dark' ? 'bg-surface-darker text-white' : 'bg-[#fafafa] text-gray-900'
+    }`}>
+      <Navbar />
+      <main className="pt-24">
         <Home />
-        <div data-aos="flip-left" data-aos-duration="1000">
-          <About />
-        </div>
+        <About />
         <Projects />
-        <div data-aos="flip-right" data-aos-duration="1000">
-          <Skills />
-        </div>
+        <Skills />
         <Services />
-        <div data-aos="slide-left" data-aos-duration="1000">
-          <Contact />
-        </div>
-        <Footer />
-        <BackToTopButton />
-      </AnimatedComponent>
+        <Contact />
+      </main>
+      <Footer />
+      <BackToTopButton />
     </div>
+  );
+};
+
+const App = () => {
+  return (
+    <ThemeProvider>
+      <AppContent />
+    </ThemeProvider>
   );
 };
 

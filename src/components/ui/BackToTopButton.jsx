@@ -1,5 +1,5 @@
 import { useState, useEffect } from 'react';
-import { ArrowUp } from "./Icons";
+import { ArrowUp } from 'lucide-react';
 import { Link } from 'react-scroll';
 
 const BackToTopButton = () => {
@@ -16,9 +16,11 @@ const BackToTopButton = () => {
   return (
     <Link to="Home" smooth duration={500}>
       <div
-        className={`my-11 mr-9 max-md:mr-7 max-xs:mr-6 -translate-y-[100vh] transition-all delay-100 ${isVisible && "translate-y-0"} z-[49] fixed bottom-2 right-2 xs:bottom-[1.3rem] xs:right-[1.3rem] md:bottom-4 md:right-16 w-8 h-8 flex justify-center items-center rounded-full bg-aba cursor-pointer hover:scale-[1.08] duration-500 text-white`}
+        className={`fixed bottom-6 right-6 z-50 w-11 h-11 flex justify-center items-center rounded-full bg-gradient-accent cursor-pointer transition-all duration-300 shadow-glow-sm hover:shadow-glow hover:scale-110 active:scale-95 ${
+          isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-4 pointer-events-none"
+        }`}
       >
-        <ArrowUp />
+        <ArrowUp size={18} className="text-white" />
       </div>
     </Link>
   );

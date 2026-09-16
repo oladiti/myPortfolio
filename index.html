@@ -1,9 +1,9 @@
 <!DOCTYPE html>
-<html lang="en_US">
+<html lang="en-US">
   <head>
     <meta charset="UTF-8" />
-    <link rel="shortcut icon" href="favicons/favicon1.ico" type="image/x-icon">
-    <link rel="manifest" href="favicons/site.webmanifest" />
+    <link rel="shortcut icon" href="/favicons/favicon1.ico" type="image/x-icon">
+    <link rel="manifest" href="/favicons/site.webmanifest" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="author" content="Oladiti Abiodun" />
     <meta
@@ -14,27 +14,37 @@
       name="keywords"
       content="Abiodun,Oladiti, Oladiti Abiodun,Abiodun'S Portfolio,Abiodun's portfolio,Abiodun's personal website, Oladiti Abiodun portfolio"
     />
-    <meta
-      name="robots"
-      content="follow, index, max-snippet:-1, max-video-preview:-1, max-image-preview:large"
-    />
+    <meta name="robots" content="follow, index, max-snippet:-1, max-video-preview:-1, max-image-preview:large" />
 
     <meta property="og:title" content="Oladiti Abiodun's Personal Portfolio" />
     <meta property="og:url" content="https://oladiti-abiodun.netlify.app" />
     <meta property="og:type" content="website" />
-    <meta
-      property="og:description"
-      content="Oladiti Abiodun's Personal website to showcase my Skills, Experience, and my Projects."
-    />
+    <meta property="og:description" content="Oladiti Abiodun's Personal website to showcase my Skills, Experience, and my Projects." />
     <meta property="og:image" content="https://i.postimg.cc/pVhH91F0/my-port.png" />
-    <meta property="og:type" content="website" />
     <meta property="og:locale" content="en_US" />
     <meta property="og:locale:alternate" content="hi_IN" />
     <link rel="canonical" href="https://oladiti-abiodun.netlify.app" />
 
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&family=Inter:wght@100..900&family=Great+Vibes&display=swap"
+      rel="stylesheet"
+    />
+
+    <script>
+      (function () {
+        try {
+          if (localStorage.getItem('current_theme') === 'dark') {
+            document.documentElement.classList.add('dark');
+          }
+        } catch (e) {}
+      })();
+    </script>
+
     <title>Oladiti Abiodun's Personal Portfolio</title>
   </head>
-  <body class="">
+  <body>
     <div id="root"></div>
     <script type="module" src="/src/main.jsx"></script>
   </body>

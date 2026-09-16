@@ -39,9 +39,6 @@ module.exports = {
         display: ['Space Grotesk', 'system-ui', 'sans-serif'],
         signature: ['Great Vibes'],
       },
-      screens: {
-        'xs': '450px',
-      },
       backgroundImage: {
         'gradient-accent': 'linear-gradient(135deg, #6366f1, #8b5cf6, #06b6d4)',
         'gradient-accent-hover': 'linear-gradient(135deg, #818cf8, #a78bfa, #22d3ee)',

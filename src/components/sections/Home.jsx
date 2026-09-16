@@ -13,8 +13,7 @@ const HeroSocials = () => (
       <li key={id}>
         <a
           href={link}
-          target="_blank"
-          rel="noopener noreferrer"
+          {...(link.startsWith('mailto') ? {} : { target: '_blank', rel: 'noopener noreferrer' })}
           aria-label={name}
           className="group relative w-11 h-11 flex items-center justify-center rounded-xl glass shadow-card hover:shadow-glow-sm hover:-translate-y-1 transition-all duration-300"
         >
@@ -57,7 +56,7 @@ function Home() {
             <span className="bg-gradient-accent bg-clip-text text-transparent">
               <TypeAnimation
                 sequence={typingSequence}
-                speed={1}
+                speed={50}
                 wrapper="span"
                 cursor={true}
                 repeat={Infinity}
@@ -70,7 +69,7 @@ function Home() {
           </p>
 
           <div className="mt-8 flex flex-wrap items-center justify-center lg:justify-start gap-4">
-            <Link to="About" smooth duration={500} className="btn-primary">
+            <Link to="About" smooth duration={500} offset={-80} className="btn-primary">
               About Me <ArrowDown size={18} />
             </Link>
             <a href={resume} target="_blank" rel="noopener noreferrer" download className="btn-secondary">
@@ -86,18 +85,21 @@ function Home() {
         <div className="relative flex justify-center items-center max-sm:hidden" data-aos="fade-up" data-aos-delay="200">
           <div className="relative">
             <div className="absolute inset-0 bg-gradient-accent rounded-full blur-3xl opacity-20 animate-glow-pulse" />
-            <div className="relative w-64 h-64 sm:w-80 sm:h-80 rounded-full gradient-border p-2 animate-float">
-              <img
-                src={AB}
-                alt="Oladiti Abiodun"
-                loading="eager"
-                className="w-full h-full object-cover rounded-full"
-              />
+            <div className="relative w-64 h-64 sm:w-80 sm:h-80 animate-float">
+              <div className="spectrum-ring" aria-hidden="true" />
+              <div className="relative w-full h-full rounded-full gradient-border p-2">
+                <img
+                  src={AB}
+                  alt="Oladiti Abiodun"
+                  loading="eager"
+                  className="w-full h-full object-cover rounded-full"
+                />
+              </div>
             </div>
-            <div className="absolute -top-4 -right-4 w-16 h-16 rounded-2xl glass-strong flex items-center justify-center text-3xl animate-float" style={{ animationDelay: '0.5s' }}>
+            <div className="absolute -top-4 -right-4 w-16 h-16 rounded-2xl glass-strong flex items-center justify-center text-3xl animate-float [animation-delay:0.5s]">
               ⚡
             </div>
-            <div className="absolute -bottom-4 -left-4 w-16 h-16 rounded-2xl glass-strong flex items-center justify-center text-3xl animate-float" style={{ animationDelay: '1s' }}>
+            <div className="absolute -bottom-4 -left-4 w-16 h-16 rounded-2xl glass-strong flex items-center justify-center text-3xl animate-float [animation-delay:1s]">
               🚀
             </div>
           </div>

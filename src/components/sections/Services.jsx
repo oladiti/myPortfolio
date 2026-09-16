@@ -23,6 +23,7 @@ const Services = () => (
               to="Contact"
               smooth
               duration={500}
+              offset={-80}
               className="inline-flex items-center gap-2 text-sm font-semibold text-primary-600 dark:text-accent-light hover:gap-3 transition-all duration-300 cursor-pointer"
             >
               Learn more

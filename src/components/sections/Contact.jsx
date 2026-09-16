@@ -4,8 +4,8 @@ import { GMail, Map } from '../ui/BrandIcons';
 import swal from 'sweetalert';
 import sendEmail from '../../lib/emailService';
 
-const ErrorBox = ({ message }) => (
-  <div className="text-sm min-h-[1.3rem] text-red-500 px-1">{message}</div>
+const ErrorBox = ({ message, id }) => (
+  <div id={id} role={message ? 'alert' : undefined} className="text-sm min-h-[1.3rem] text-red-500 px-1">{message || ''}</div>
 );
 
 const validate = (formData) => {
@@ -104,8 +104,12 @@ const Contact = () => {
                 className="input-field"
                 value={form.name}
                 onChange={handleChange}
+                required
+                aria-required="true"
+                aria-invalid={Boolean(errors.name)}
+                aria-describedby="contact-name-error"
               />
-              <ErrorBox message={errors.name} />
+              <ErrorBox message={errors.name} id="contact-name-error" />
             </div>
 
             <div>
@@ -118,8 +122,12 @@ const Contact = () => {
                 className="input-field"
                 value={form.email}
                 onChange={handleChange}
+                required
+                aria-required="true"
+                aria-invalid={Boolean(errors.email)}
+                aria-describedby="contact-email-error"
               />
-              <ErrorBox message={errors.email} />
+              <ErrorBox message={errors.email} id="contact-email-error" />
             </div>
 
             <div>
@@ -132,11 +140,16 @@ const Contact = () => {
                 className="input-field resize-none"
                 value={form.message}
                 onChange={handleChange}
+                required
+                aria-required="true"
+                aria-invalid={Boolean(errors.message)}
+                aria-describedby="contact-message-error"
               />
-              <ErrorBox message={errors.message} />
+              <ErrorBox message={errors.message} id="contact-message-error" />
             </div>
 
             <button
+              type="submit"
               disabled={isSubmitting}
               className={`btn-primary w-full mt-4 ${isSubmitting ? 'opacity-60 cursor-not-allowed hover:scale-100' : ''}`}
             >

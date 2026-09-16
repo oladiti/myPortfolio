@@ -5,7 +5,7 @@ import AB from "../../assets/Abbey.webp";
 import contactInfo from '../../data/contactInfo';
 import resume from "../../assets/ola.pdf";
 
-const typingSequence = ['Frontend Developer', 2000, 'Web Developer', 2000, 'Graphics Designer', 2000];
+const typingSequence = ['Full Stack Developer', 2000, 'MERN Stack Developer', 2000, 'Web Developer', 2000];
 
 const HeroSocials = () => (
   <ul className="flex items-center gap-3">
@@ -32,6 +32,9 @@ function Home() {
     <div name="Home" className="relative min-h-screen w-full flex items-center overflow-hidden dot-pattern">
       <div className="section-content relative z-10 grid lg:grid-cols-2 gap-12 items-center py-12">
         <div className="text-center lg:text-left" data-aos="fade-up">
+          <p className="mb-4 text-sm sm:text-base font-semibold uppercase tracking-[0.2em] text-indigo-600 dark:text-indigo-400">
+            Full-Stack Web Developer • Working Worldwide
+          </p>
           <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full glass shadow-card mb-5">
             <span className="relative flex h-2.5 w-2.5">
               <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-emerald-400 opacity-75" />

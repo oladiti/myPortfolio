@@ -24,7 +24,7 @@ const Footer = () => {
               Oladiti Abiodun
             </span>
           </Link>
-          <p className="gradient-text mt-3 font-medium">Frontend Developer</p>
+          <p className="gradient-text mt-3 font-medium">Full Stack Developer (MERN)</p>
           <p className="mt-3 mb-5 max-w-md text-sm leading-relaxed text-gray-500 dark:text-gray-400">
             Thanks for visiting my personal portfolio. Let's connect over socials and build something great together.
           </p>

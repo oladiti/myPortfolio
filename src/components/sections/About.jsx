@@ -46,17 +46,18 @@ const About = () => (
         <div className="lg:col-span-2 space-y-6">
           <div className="rounded-2xl glass shadow-card p-8">
             <h3 className="text-2xl font-display font-semibold mb-4 text-gray-900 dark:text-white">
-              Frontend Developer
+              Full Stack Developer
               <span className="text-xl font-normal text-gray-400 dark:text-gray-500 pl-2">based in Lagos, Nigeria</span>
             </h3>
             <p className="text-gray-600 dark:text-gray-400 leading-relaxed mb-4">
-              I am a passionate front-end web developer who is dedicated and certified in creating visually appealing and user-friendly websites.
-              My strong grasp of HTML, CSS, and JavaScript enables me to effectively transform design concepts into functional and interactive web pages.
+              I am a passionate full-stack web developer dedicated to building complete,
+              end-to-end applications. I specialize in the MERN stack (MongoDB, Express.js,
+              React, and Node.js) — crafting robust back-end APIs and seamless, user-friendly front-end interfaces.
             </p>
             <p className="text-gray-600 dark:text-gray-400 leading-relaxed">
-              Utilizing frameworks like React and Tailwind CSS, I develop responsive and dynamic websites.
-              I stay up-to-date with the latest industry trends and value collaboration and clear communication,
-              making me an invaluable member of any team.
+              From designing clean databases and RESTful APIs to building responsive and dynamic UIs,
+              I handle every layer of your project. I stay up-to-date with the latest industry trends
+              and value collaboration and clear communication, making me an invaluable member of any team.
             </p>
 
             <div className="mt-7 grid grid-cols-2 sm:grid-cols-4 gap-4">

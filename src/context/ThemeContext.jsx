@@ -1,18 +1,33 @@
-import { createContext, useState, useEffect } from 'react';
+import { createContext, useState, useLayoutEffect } from 'react';
 
 export const ThemeContext = createContext();
 
-const ThemeProvider = ({ children }) => {
-  const stored = localStorage.getItem('current_theme');
-  const [theme, setTheme] = useState(stored || 'light');
+const getInitialTheme = () => {
+  try {
+    return localStorage.getItem('current_theme') || 'light';
+  } catch {
+    return 'light';
+  }
+};
 
-  useEffect(() => {
-    localStorage.setItem('current_theme', theme);
+const applyTheme = (theme) => {
+  try {
     document.documentElement.classList.toggle('dark', theme === 'dark');
+    localStorage.setItem('current_theme', theme);
+  } catch {}
+};
+
+const ThemeProvider = ({ children }) => {
+  const [theme, setTheme] = useState(getInitialTheme);
+
+  useLayoutEffect(() => {
+    applyTheme(theme);
   }, [theme]);
 
   const toggleTheme = () => {
-    setTheme(prev => (prev === 'light' ? 'dark' : 'light'));
+    const next = theme === 'light' ? 'dark' : 'light';
+    applyTheme(next);
+    setTheme(next);
   };
 
   return (

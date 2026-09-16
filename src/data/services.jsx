@@ -5,18 +5,18 @@ import Web from '../assets/it-icon.png';
 
 const services = [
   {
-    name: "Web Development",
-    description: "Creating visually appealing websites that fit any screen size to reach global markets.",
+    name: "Full Stack Development",
+    description: "Building complete MERN stack applications, from MongoDB databases and Node.js/Express APIs to polished React front-ends.",
     img: Webdev,
   },
   {
-    name: "Graphics Design",
-    description: "Designing beautiful graphics like logos, flyers, and ID cards to make your brand stand out.",
+    name: "Frontend Development",
+    description: "Creating visually appealing, responsive interfaces with React and Tailwind CSS that fit any screen size to reach global markets.",
     img: Graphics,
   },
   {
-    name: "S.E.O",
-    description: "Optimizing your website for search engines to increase visibility and drive organic traffic.",
+    name: "Backend & APIs",
+    description: "Designing secure RESTful APIs and databases so your application runs fast, reliably, and scales as you grow.",
     img: Search,
   },
   {

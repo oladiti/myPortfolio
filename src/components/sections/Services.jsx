@@ -15,7 +15,7 @@ const Services = () => (
             className="group rounded-2xl glass shadow-card dark:shadow-card-dark transition-all duration-300 hover:shadow-card-hover dark:hover:shadow-card-dark-hover hover:-translate-y-1.5 p-8"
           >
             <div className="w-14 h-14 rounded-xl bg-gradient-accent flex items-center justify-center p-3 mb-5 transition-transform duration-300 group-hover:scale-110 group-hover:rotate-6">
-              <img src={service.img} alt={service.name} className="w-full h-full object-contain" loading="eager" />
+              {service.icon}
             </div>
             <h3 className="font-display font-semibold text-xl mb-3 text-gray-900 dark:text-white">{service.name}</h3>
             <p className="mb-5 text-gray-600 dark:text-gray-400 leading-relaxed">{service.description}</p>

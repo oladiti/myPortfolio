@@ -1,7 +1,7 @@
 import { TypeAnimation } from 'react-type-animation';
 import { Link } from 'react-scroll';
 import { ArrowDown, Download } from 'lucide-react';
-import AB from "../../assets/Abbey.webp";
+import AB from "../../assets/aboutpic.png";
 import contactInfo from '../../data/contactInfo';
 import resume from "../../assets/ola.pdf";
 
@@ -50,7 +50,7 @@ function Home() {
               Hi There <span className="wave">👋</span> I'm
             </span>
             <span className="block text-6xl max-sm:text-4xl md:text-7xl gradient-text tracking-tight">
-              ABIODUN
+              OLADITI
             </span>
           </h1>
 

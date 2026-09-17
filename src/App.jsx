@@ -1,28 +1,36 @@
-import { useEffect } from 'react';
+import { useEffect, lazy, Suspense } from 'react';
 import ThemeProvider from './context/ThemeContext';
-import About from './components/sections/About';
-import Skills from './components/sections/Skills';
-import Home from './components/sections/Home';
 import Navbar from './components/layout/Navbar';
-import Projects from './components/sections/Projects';
-import Contact from './components/sections/Contact';
-import Services from './components/sections/Services';
-import Footer from './components/layout/Footer';
-import BackToTopButton from './components/ui/BackToTopButton';
-import AOS from 'aos';
+import Home from './components/sections/Home';
+import PageLoader from './components/ui/PageLoader';
 import 'aos/dist/aos.css';
 import useTheme from './hooks/useTheme';
+
+const About = lazy(() => import('./components/sections/About'));
+const Projects = lazy(() => import('./components/sections/Projects'));
+const Skills = lazy(() => import('./components/sections/Skills'));
+const Services = lazy(() => import('./components/sections/Services'));
+const Contact = lazy(() => import('./components/sections/Contact'));
+const Footer = lazy(() => import('./components/layout/Footer'));
+const BackToTopButton = lazy(() => import('./components/ui/BackToTopButton'));
 
 const AppContent = () => {
   const { theme } = useTheme();
 
   useEffect(() => {
-    AOS.init({
-      duration: 800,
-      easing: 'ease-out',
-      once: true,
-      offset: 80,
+    let active = true;
+    import('aos').then(({ default: AOS }) => {
+      if (!active) return;
+      AOS.init({
+        duration: 800,
+        easing: 'ease-out',
+        once: true,
+        offset: 80,
+      });
     });
+    return () => {
+      active = false;
+    };
   }, []);
 
   return (
@@ -32,14 +40,18 @@ const AppContent = () => {
       <Navbar />
       <main className="pt-24">
         <Home />
-        <About />
-        <Projects />
-        <Skills />
-        <Services />
-        <Contact />
+        <Suspense fallback={<PageLoader />}>
+          <About />
+          <Projects />
+          <Skills />
+          <Services />
+          <Contact />
+        </Suspense>
       </main>
-      <Footer />
-      <BackToTopButton />
+      <Suspense fallback={null}>
+        <Footer />
+        <BackToTopButton />
+      </Suspense>
     </div>
   );
 };

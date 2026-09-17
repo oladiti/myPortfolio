@@ -1,6 +1,6 @@
 import { Link } from 'react-scroll';
 import { Palette, Zap, Smartphone, Users, ArrowRight } from 'lucide-react';
-import profile from "../../assets/aboutpic.webp";
+import profile from "../../assets/aboutpic.png";
 import SectionHeading from '../ui/SectionHeading';
 import techStack from '../../data/techStack';
 

@@ -29,7 +29,7 @@ const Navbar = () => {
       <header
         className="fixed top-0 inset-x-0 z-50 transition-all duration-500"
       >
-        <nav className={`glass-strong w-full px-4 md:px-8 py-2 flex items-center justify-between gap-1 border-b border-gray-200 dark:border-white/10 shadow-md transition-all duration-300
+        <nav className={`glass-strong w-full px-12 md:px-8 py-4 flex items-center justify-between gap-1 border-b border-gray-200 dark:border-white/10 shadow-md transition-all duration-300
           ${scrolled ? 'shadow-xl' : 'shadow-md'}`}>
           <Link to="Home" smooth duration={500} offset={-80} className="flex-shrink-0 cursor-pointer">
             <img src={Logo} alt="Logo" width={36} height={32} className="transition-all duration-300 hover:scale-110" />

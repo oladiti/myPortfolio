@@ -32,7 +32,7 @@ function Home() {
     <div name="Home" className="relative min-h-screen w-full flex items-center overflow-hidden dot-pattern">
       <div className="section-content relative z-10 grid lg:grid-cols-2 gap-12 items-center py-12">
         <div className="text-center lg:text-left" data-aos="fade-up">
-          <p className="mb-4 -mt-16 text-sm sm:text-base font-semibold uppercase tracking-[0.2em] text-indigo-600 dark:text-indigo-400">
+          <p className="mb-4 mt-0 text-sm sm:text-base font-semibold uppercase tracking-[0.2em] text-indigo-600 dark:text-indigo-400">
             Full-Stack Web Developer • Working Worldwide
           </p>
           <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full glass shadow-card mb-5">

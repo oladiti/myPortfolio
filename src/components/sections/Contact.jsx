@@ -44,10 +44,11 @@ const Contact = () => {
         setErrors({});
       } catch (error) {
         console.error('EmailJS Error:', error);
+        const reason = error?.text || error?.message || 'Please try again later';
         swal({
           icon: "error",
           title: "Something went wrong",
-          text: "Please try again later",
+          text: reason,
           button: "Okay",
         });
       } finally {

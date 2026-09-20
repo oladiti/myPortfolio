@@ -29,10 +29,10 @@ const Navbar = () => {
       <header
         className="fixed top-0 inset-x-0 z-50 transition-all duration-500"
       >
-        <nav className={`glass-strong w-full px-12 md:px-8 py-4 flex items-center justify-between gap-1 border-b border-gray-200 dark:border-white/10 shadow-md transition-all duration-300
+        <nav className={`glass-strong w-full px-12 md:px-8 py-4 md:py-5 flex items-center justify-between gap-1 border-b border-gray-200 dark:border-white/10 shadow-md transition-all duration-300
           ${scrolled ? 'shadow-xl' : 'shadow-md'}`}>
-          <Link to="Home" smooth duration={500} offset={-80} className="flex-shrink-0 cursor-pointer">
-            <img src={Logo} alt="Logo" width={36} height={32} className="transition-all duration-300 hover:scale-110" />
+          <Link to="Home" smooth duration={500} offset={-80} className="flex-shrink-0  cursor-pointer">
+            <img src={Logo} alt="Logo" className="h-[36px] w-[40px] md:h-[50px] md:w-[56px] transition-all duration-300 hover:scale-110" />
           </Link>
 
           <div className="hidden md:flex items-center">
@@ -42,25 +42,23 @@ const Navbar = () => {
           <div className="flex items-center gap-2">
             <button
               onClick={toggleTheme}
-              className="p-2 rounded-xl hover:bg-gray-100 dark:hover:bg-white/10 transition-all duration-200"
+              className="p-2.5 md:p-3 rounded-xl hover:bg-gray-100 dark:hover:bg-white/10 transition-all duration-200"
               aria-label={`Switch to ${theme === 'light' ? 'dark' : 'light'} mode`}
             >
               <img
                 src={theme === 'light' ? toggleLight : toggleDark}
                 alt=""
-                width={20}
-                height={18}
+                className="h-[22px] w-[24px] md:h-[28px] md:w-[30px]"
               />
             </button>
 
             <button
               onClick={() => setNavOpen(prev => !prev)}
-              className="md:hidden p-2 rounded-xl hover:bg-gray-100 dark:hover:bg-white/10 transition-all duration-200"
+              className="md:hidden p-2.5 rounded-xl hover:bg-gray-100 dark:hover:bg-white/10 transition-all duration-200"
               aria-label={navOpen ? 'Close menu' : 'Open menu'}
             >
-              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"
-                fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"
-                className="text-gray-700 dark:text-gray-300">
+              <svg xmlns="http://www.w3.org/2000/svg" className="w-6 h-6 text-gray-700 dark:text-gray-300" viewBox="0 0 24 24"
+                fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
                 {navOpen ? (
                   <>
                     <line x1="18" y1="6" x2="6" y2="18"></line>
@@ -82,7 +80,7 @@ const Navbar = () => {
       {navOpen && (
         <>
           <div className="fixed inset-0 z-40 bg-black/50 backdrop-blur-sm md:hidden" onClick={closeNav} />
-          <div className="fixed inset-x-0 top-16 z-50 mx-4 md:hidden animate-slide-up">
+          <div className="fixed inset-x-0 top-[75px] z-50 mx-4 md:hidden animate-slide-up">
             <div className="glass-strong rounded-2xl p-6 shadow-xl">
               <Navigation handleClick={closeNav} isMobile />
             </div>

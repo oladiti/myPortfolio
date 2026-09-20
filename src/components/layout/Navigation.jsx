@@ -3,7 +3,7 @@ import navLinks from '../../data/navlinks';
 
 const Navigation = ({ handleClick, isMobile = false }) => {
   return (
-    <ul className={`flex ${isMobile ? 'flex-col items-center gap-2' : 'items-center gap-1'}`}>
+    <ul className={`flex ${isMobile ? 'flex-col items-center gap-2' : 'items-center gap-2'}`}>
       {navLinks.map(({ id, link }) => (
         <li key={id}>
           <Link
@@ -15,8 +15,9 @@ const Navigation = ({ handleClick, isMobile = false }) => {
             offset={-80}
             activeClass="!text-white !bg-gradient-accent"
             className={`cursor-pointer block px-4 py-2 rounded-lg text-sm font-medium transition-all duration-200
+              lg:px-6 lg:py-3 lg:text-base
               text-gray-600 dark:text-gray-400 hover:text-gray-900 dark:hover:text-white hover:bg-gray-100 dark:hover:bg-white/10
-              ${isMobile ? 'text-lg py-3 w-full text-center' : ''}`}
+              ${isMobile ? 'text-xl py-3.5 w-full text-center' : ''}`}
           >
             {link}
           </Link>
